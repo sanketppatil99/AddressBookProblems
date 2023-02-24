@@ -13,7 +13,7 @@
             bool end = true;
             while (true)
             {
-                Console.WriteLine("Select Option\n1.add Contact \n2.Display \n3.Edit Contact \n4.end");
+                Console.WriteLine("Select Option\n1.add Contact \n2.Display \n3.Edit Contact \n4.delete \n5.end ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,9 @@
                         AddressBookMain.EditContact();
                         break;
                     case 4:
+                        AddressBookMain.Delete();
+                        break;
+                    case 5:
                         end = false;
                         break;
                     default:
